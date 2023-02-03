@@ -35,10 +35,10 @@ class App extends Component {
       <div className='container-fuild my-5'>
         <div className="row">
           <div class="col-sm-6 mx-auto text-white shadow-lg">
-            <h1 className='text-center'>todey plans</h1>
+            <h1 className='text-center'>Input</h1>
             <div className='row'>
               <div className='col-9'>
-                <input type='text' className='form-control' placeholder="nimadur yoz" value={this.state.text} onChange={this.handleChange} />
+                <input type='text' className='form-control' placeholder="email.com" value={this.state.text} onChange={this.handleChange} />
               </div>
               <div className='col-2'>
                 <button className='btn btn-warning px-5 font-weight-bold' onClick={this.handleAdd}>Add</button>
@@ -63,5 +63,4 @@ class App extends Component {
     )
   }
 }
-
 export default App;
