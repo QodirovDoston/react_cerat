@@ -1,23 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 export default function Input() {
-    
     const [message, setMessage] = useState('');
-
     const [updated, setUpdated] = useState(message);
-    
     const handleChange = (event) => {
-    
         setMessage(event.target.value);
-    
     };
-    
     const handleClick = () => {
-    
         setUpdated(message);
-    
     };
-    
     return (
         <>
             <div className="container">

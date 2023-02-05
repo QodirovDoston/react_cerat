@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import Plan from './Plan.js'
 import './index.css';
@@ -44,14 +43,14 @@ class App extends Component {
                 <button className='btn btn-warning px-5 font-weight-bold' onClick={this.handleAdd}>Add</button>
               </div>
               <div className='container-fuild'>
-                {/* <ul className='list-unstyled row m-5'>
-         <Plan />
-         {
+                <ul className='list-unstyled row m-5'>
+         {/* <Plan /> */}
+         {/* {
           this.state.items.map((value, i) => {
             return <Plan key={i} id={i} value={value} sendData={this.handleDelete} />
           })
-         }
-          </ul> */}
+         } */}
+          </ul>
                 <ul className='list-unstyled row m-5'>
                   <Plan p = {this.state.items} sendDelete={this.handleDelete} />
                 </ul>
